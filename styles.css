@@ -1,0 +1,30 @@
+@import url(/styles/header.css);
+@import url(/styles/container.css);
+@import url(/styles/carrossel.css);
+
+:root{
+    --cor-de-fundo: #d8dadd;
+    --branco-principal: #FFFFFF;
+    --branco-secundario: #d0cedb;
+    --azul-principal: #002F52;
+    --azul-secundario: #013f6e;
+    --amarelo-principal:#EB9B00;
+    --cinza-secundario: #c4c4c4;
+    --input-width: 95%;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: "Poppins";
+}
