@@ -10,6 +10,9 @@
     --azul-secundario: #013f6e;
     --amarelo-principal:#EB9B00;
     --cinza-secundario: #c4c4c4;
+    --preto-principal: #000000;
+    --cor-rodape: #F9F9F9;
+    --linha-rodape: #858585;
     --input-width: 95%;
 
 }
@@ -22,6 +25,9 @@
 
 a{
     text-decoration: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 body{

@@ -93,3 +93,11 @@
     background-color: var(--cinza-secundario);
     border: var(--azul-principal);
 }
+
+/* rodapé */
+
+.rodape{
+    background-color: var(--cor-rodape);
+    color: var(--preto-principal);
+    border-top: solid 1px var(--linha-rodape);
+}
