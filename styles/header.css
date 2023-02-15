@@ -17,8 +17,8 @@
 }
 
 .cabecalho__menu{
-    width: 24px;
-    height: 24px;
+    width: 1.5em;
+    height: 1.5em;
     background-image: url("../img/Menu.svg");
     display: inline-block;
     background-repeat: no-repeat;
