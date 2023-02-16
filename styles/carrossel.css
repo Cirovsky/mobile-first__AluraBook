@@ -1,37 +1,44 @@
 .carrossel{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+    text-align: center;
 }
 .carrossel__titulo{
-    margin: 1em 0 .5em 0;
+    padding: 1em 0 .5em 0;
     text-transform: uppercase;
     color: var(--amarelo-principal);
     font-weight: 700;
     font-size: 1.125em;
+    background-color: var(--branco-principal);
 }
 
-.carrossel__nav{
+.swipper-slide img{
+    width: 100%;
+    margin: 0 1em;
+}
+
+.swiper-button-prev,.swiper-button-next,.swiper-scrollbar{
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: .5em 0 1em 0;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--swiper-pagination-color,var(--azul-principal));
+}
+
+.carrossel__lancamento{
+    width: 11em;
+    max-height: 15em;
+}
+
+.carrossel__container{
     display: flex;
-    column-gap: .5em;
-}
-
-.carrossel__nav-item{
-    width: .5em;
-    height: .5em;
-    background-color: var(--azul-principal);
-    border-radius: .25em;
+    justify-content: center;
     margin: 1em 0;
 }
 
-.carrossel__principal{
-    display: flex;
-    column-gap: 1.25em;
-    margin-bottom: 1.5em;
-}
-.carrossel__lancamento{
-    width: 11em;
-}
 .carrossel__interesse, .carrossel__autor-mes{
     display: flex;
     width: 82%;
@@ -48,6 +55,7 @@
     row-gap: 2em;
     flex-direction: column;
     justify-content: space-between;
+    text-align: left;
 }
 
 .carrossel__autor-mes .carrossel__interesse-col h3::before{
@@ -98,4 +106,8 @@
     background-color: var(--amarelo-principal);
     color: var(--branco-principal);
     height: 3em;
+}
+
+.logo__interesse{
+    width: 10em;
 }

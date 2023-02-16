@@ -25,8 +25,13 @@
     width: var(--input-width);
 }
 
-.pesquisar::placeholder{
+.pesquisar::placeholder, .email::placeholder{
     color: var(--branco-principal);
+    font-weight: 400;
+    font-size: 0.875em;
+    text-align: center;
+    background: url("../img/Pesquisa.svg") no-repeat;
+    background-position: 1em;
 }
 
 /* recentes */
@@ -88,6 +93,8 @@
 }
 .email::placeholder{
     color: var(--azul-principal);
+    background-image: url("../img/Email.svg");
+    text-align: left;
 }
 
 .email:focus-visible{
