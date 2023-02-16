@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
@@ -16,10 +17,11 @@
 
 <body>
     <header class="cabecalho">
-        <div class="container">
+        <div class="cabecalho__inicio container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
-                <span class="cabecalho__menu container__imagem"></span>
+            <label for="menu" class="cabecalho-esquerdo">
+                <span class="icone-categorias container__imagem"></span>
+                <h2 class="texto-categorias">categorias</h2>
             </label>
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">categorias</li>
@@ -29,19 +31,21 @@
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">Business</a></li>
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design & UX</a></li>
             </ul>
-            <a href="#">
-                <img class="container__imagem" src="../img/Logo.svg" alt="logo">
+            <a class="logo-alura cabecalho-esquerdo" href="#">
+                <img class="container__imagem logo-alura__icone" src="../img/Logo.svg" alt="logo">
+                <h2 class="titulo-1">Alura</h2><h2 class="titulo-2">Books</h2>
             </a>
 
         </div>
-        <div class="container">
-            <a href="#">
-                <img class="container__imagem" src="/img/Favoritos.svg" alt="meus favoritos">
+        <div class="container cabecalho__menu-direito">
+            <a class ="cabecalho__menu-direito__item" href="#">
+                <img class="container__imagem cabecalho-favorito" src="/img/Favoritos.svg" alt="meus favoritos">
+                <h2 class="texto-favoritos">favoritos</h2>
             </a>
-            <a href="#">
+            <a class ="cabecalho__menu-direito__item" href="#">
                 <img class="container__imagem" src="/img/Compras.svg" alt="carrinho de compras">
             </a>
-            <a href="#">
+            <a class ="cabecalho__menu-direito__item" href="#">
                 <img class="container__imagem" src="/img/Usuário.svg" alt="meu perfil">
             </a>
         </div>

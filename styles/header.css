@@ -7,6 +7,10 @@
     padding: 0 .5em;
 }
 
+.logo-alura h2{
+    display: none;
+}
+
 .container{
     display: flex;
     align-items: center;
@@ -16,13 +20,21 @@
     padding: .5em;
 }
 
-.cabecalho__menu{
+.texto-favoritos{
+    display: none;
+}
+
+.icone-categorias{
     width: 1.5em;
     height: 1.5em;
     background-image: url("../img/Menu.svg");
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.texto-categorias{
+    display: none;
 }
 
 .container__botao{
@@ -54,8 +66,68 @@
 .lista-menu__link{
     text-transform: uppercase;
     color: var(--azul-principal);
+
 }
 
 .lista-menu__item:hover{
     background-color: var(--branco-secundario);
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__menu{
+        display: none;
+    }
+
+    .logo-alura__icone{
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .logo-alura{
+        display: flex;
+        align-items:center;
+    }
+    .logo-alura h2{
+        display: block;
+        font-size: 1.875em;
+        font-family: var(--fonte-logo);
+        text-transform: capitalize;
+        color: var(--preto-principal);
+        padding: 1em 0 .666em 0 ;
+    }
+    .titulo-1{
+        font-weight: 700;
+    }
+
+    .cabecalho-favorito{
+        display: none;
+    }
+
+    .texto-favoritos{
+        display: block;
+    }
+
+    .cabecalho__menu-direito__item h2, .texto-categorias{
+        text-transform: uppercase;
+        font-weight: 400;
+        color: var(--preto-principal);
+        margin-right: 2em;
+    }
+    .cabecalho-esquerdo:nth-child(2){
+        order: 2;
+    }
+    .icone-categorias{
+        display: none;
+    }
+    .texto-categorias{
+        display: block;
+    }
+
+    .cabecalho{
+        justify-content:flex-end;
+    }
+    .logo-alura{
+        position: absolute;
+        left: 5em;
+    }
 }
