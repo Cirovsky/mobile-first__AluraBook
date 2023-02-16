@@ -76,14 +76,17 @@
 .newsletter{
     background-color: transparent;
     color: var(--azul-principal);
+    text-align: left;
 }
 
 .newsletter h3{
     font-weight: 500;
+    padding: 0 4em 0 0.25em;
 }
 
 .newsletter p{
     font-weight: 300;
+    padding: 0 4em 0 0.25em;
 }
 
 .email{
@@ -93,8 +96,10 @@
 }
 .email::placeholder{
     color: var(--azul-principal);
-    background-image: url("../img/Email.svg");
+    background: url("../img/Email.svg") no-repeat;
     text-align: left;
+    padding-left: 2em;
+    font-size: 1em;
 }
 
 .email:focus-visible{
