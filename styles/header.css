@@ -20,7 +20,7 @@
     padding: .5em;
 }
 
-.texto-favoritos{
+.texto-favoritos, .texto-estante, .texto-categorias{
     display: none;
 }
 
@@ -33,10 +33,6 @@
     background-position: center;
 }
 
-.texto-categorias{
-    display: none;
-}
-
 .container__botao{
     display: none;
 }
@@ -47,34 +43,38 @@
     top:100%;
     left: 0;
     width: 60vw;
+    background-color: var(--branco-principal);
 }
 
 .container__botao:checked~.lista-menu{
     display: block;
 }
 
-.lista-menu__titulo, .lista-menu__item{
-    padding: 1em;
-    background-color: var(--branco-principal);
-}
-
 .lista-menu__titulo{
     color: var(--amarelo-principal);
     font-weight: 700;
+    padding: 1em;
 }
 
 .lista-menu__link{
     text-transform: uppercase;
     color: var(--azul-principal);
+    padding: 1em 0 1em 1.5em;
 
 }
 
-.lista-menu__item:hover{
-    background-color: var(--branco-secundario);
+.lista-menu__link:hover{
+    background-color: var(--azul-principal);
+    color: var(--branco-principal);
 }
 
 @media screen and (min-width: 1024px) {
-    .cabecalho__menu{
+    .cabecalho{
+        padding: 0 5em;
+        justify-content:flex-end;
+    }
+
+    .cabecalho__menu,.cabecalho-favoritos,.lista-menu__titulo{
         display: none;
     }
 
@@ -99,20 +99,17 @@
         font-weight: 700;
     }
 
-    .cabecalho-favorito{
-        display: none;
-    }
-
-    .texto-favoritos{
+    .texto-favoritos, .texto-estante{
         display: block;
+        margin-right: 2.625em;
     }
 
     .cabecalho__menu-direito__item h2, .texto-categorias{
         text-transform: uppercase;
         font-weight: 400;
         color: var(--preto-principal);
-        margin-right: 2em;
     }
+
     .cabecalho-esquerdo:nth-child(2){
         order: 2;
     }
@@ -123,11 +120,33 @@
         display: block;
     }
 
-    .cabecalho{
-        justify-content:flex-end;
+    .caixa-categorias{
+        padding: 0.625em;
+        margin-right: 2em;
     }
+
+    .container__botao:checked~.caixa-categorias{
+        background-color: var(--azul-principal);
+    }
+    .container__botao:checked~.caixa-categorias h2{
+        color: var(--branco-principal);
+    }
+    
     .logo-alura{
         position: absolute;
         left: 5em;
+    }
+
+    .lista-menu{
+        display: none;
+        position: absolute;
+        top:76%;
+        left: 26.45em;
+        width: 17vw;
+    }
+
+    .lista-menu__link{
+        text-align: center;
+        padding: 1em 1.5em;
     }
 }
