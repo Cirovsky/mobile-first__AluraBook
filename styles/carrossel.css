@@ -111,3 +111,28 @@
 .logo__interesse{
     width: 10em;
 }
+
+@media screen and (min-width: 1024px) {
+    .carrossel__container{
+        margin: 3.875em auto;
+    }
+
+    .carrossel__interesse,.carrossel__autor-mes{
+        width: 55%;
+        padding-left: 0.6em;
+    }
+
+    .carrossel__texto{
+        padding-left: 0.5em;
+    }
+
+    .carrossel__texto p{
+        font-size: 1em;
+    }
+    .carrossel__interesse-mais{
+        font-weight: 700;
+    }
+    .carrossel__interesse-opcoes{
+        padding: 0;
+    }
+}

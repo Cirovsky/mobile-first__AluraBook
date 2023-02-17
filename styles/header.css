@@ -101,13 +101,20 @@
 
     .texto-favoritos, .texto-estante{
         display: block;
-        margin-right: 2.625em;
     }
 
     .cabecalho__menu-direito__item h2, .texto-categorias{
         text-transform: uppercase;
         font-weight: 400;
         color: var(--preto-principal);
+    }
+
+    .cabecalho__menu-direito__item{
+        margin-right: 2.625em;
+    }
+
+    .cabecalho__menu-direito__item:last-child{
+        margin-right: 0;
     }
 
     .cabecalho-esquerdo:nth-child(2){
@@ -141,7 +148,7 @@
         display: none;
         position: absolute;
         top:76%;
-        left: 26.45em;
+        left: 23.8em;
         width: 17vw;
     }
 

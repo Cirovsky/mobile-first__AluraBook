@@ -8,7 +8,7 @@
 .container__padrao h3{
     font-size: 1.125em;
     font-weight: 700;
-    margin-bottom: 1em;;
+    margin-bottom: 1em;
 }
 
 .container__padrao p{
@@ -58,10 +58,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-column: 2/3;
-    grid-row: 2/3;
     background-color: var(--amarelo-principal);
-    color: var(--branco-principal);
     padding: 1em 1.6em;
 }
 
@@ -113,4 +110,103 @@
     background-color: var(--cor-rodape);
     color: var(--preto-principal);
     border-top: solid 1px var(--linha-rodape);
+}
+.rodape-estendido{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    /* banner */
+    .banner{
+        padding: 5.25em 13em;
+    }
+    .banner h3{
+        font-size: 2.25em;
+        margin-bottom: 0.25em;
+    }
+    .banner p{
+        margin-bottom: 2em;
+    }
+
+    .pesquisar {
+        border-radius: 1.5em;
+        padding: .5em 1em;
+        width: 70%;
+    }
+
+    .pesquisar::placeholder{
+        font-size: 1em;
+        padding-left: 2em;
+    }
+
+    /* recentes */
+    .recentes, .newsletter{
+        padding: 1em 8.78em;
+    }
+    .container__recentes-lista{
+        gap: 1.5em;
+    }
+    
+    .container__recentes-items:nth-child(1){
+        order: 0;
+    }
+    .container__recentes-items:nth-child(2){
+        order: 1;
+    }
+    .container__recentes-items:nth-child(3){
+        order: 1;
+    }
+    .container__recentes-items:nth-child(4){
+        order: 1;
+    }
+    .container__recentes-items:nth-child(5){
+        order: 1;
+    }
+    .container__recentes-items:nth-child(6){
+        order: 2;
+    }
+    .container__recentes-items:nth-child(7){
+        order: 0;
+    }
+    .container__recentes-items:nth-child(8){
+        order: 1;
+    }
+    .container__recentes-items{
+        padding: 1.5em 2em;
+    }
+
+    .container__recentes-items a{
+        font-size: 1.5em;
+    }
+
+    /* newsletter */
+    .newsletter{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 84px;
+    }
+
+    .newsletter h3{
+        font-size: 1.5em;
+        grid-column: 1/2;
+    }
+    .newsletter p{
+        font-size: 1em;
+        grid-column: 1/2 ;
+    }
+    .email{
+        align-self:flex-end;
+        justify-self: center;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 2em;
+        border-radius: 2em;
+    }
+
+    /* rodape */
+    
+    .rodape-estendido{
+        display: block;
+    }
+
 }
