@@ -135,4 +135,9 @@
     .carrossel__interesse-opcoes{
         padding: 0;
     }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        background-color: var(--azul-principal);
+    }
 }
