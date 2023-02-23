@@ -1,8 +1,10 @@
 .container__padrao{
-    background-color: var(--azul-principal);
     color: var(--branco-principal);
     text-align: center;
     padding: 1em;
+}
+.banner, .recentes{
+    background: var(--azul-principal);
 }
 
 .container__padrao h3{
