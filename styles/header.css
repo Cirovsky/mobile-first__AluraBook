@@ -41,7 +41,6 @@
     display: none;
     position: absolute;
     top:100%;
-    left: 0;
     width: 60vw;
     background-color: var(--branco-principal);
 }
@@ -58,13 +57,13 @@
 
 .lista-menu__link{
     text-transform: uppercase;
-    color: var(--azul-principal);
+    color: var(--azul);
     padding: 1em 0 1em 1.5em;
 
 }
 
 .lista-menu__link:hover{
-    background-color: var(--azul-principal);
+    background-color: var(--azul);
     color: var(--branco-principal);
 }
 
@@ -133,7 +132,7 @@
     }
 
     .container__botao:checked~.caixa-categorias{
-        background-color: var(--azul-principal);
+        background-color: var(--azul);
     }
     .container__botao:checked~.caixa-categorias h2{
         color: var(--branco-principal);
@@ -146,11 +145,9 @@
 
     .lista-menu{
         display: none;
-        position: absolute;
-        top:76%;
-        left: 23.8em;
-        width: 17vw;
+        width: auto;
     }
+
 
     .lista-menu__link{
         text-align: center;

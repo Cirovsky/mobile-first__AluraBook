@@ -4,7 +4,7 @@
     padding: 1em;
 }
 .banner, .recentes{
-    background: var(--azul-principal);
+    background: var(--azul-degrade);
 }
 
 .container__padrao h3{
@@ -74,7 +74,7 @@
 
 .newsletter{
     background-color: transparent;
-    color: var(--azul-principal);
+    color: var(--azul);
     text-align: left;
 }
 
@@ -89,12 +89,12 @@
 }
 
 .email{
-    border-color: var(--azul-principal);
-    color: var(--azul-principal);
+    border-color: var(--azul);
+    color: var(--azul);
     width: calc(var(--input-width) - 2.125em);
 }
 .email::placeholder{
-    color: var(--azul-principal);
+    color: var(--azul);
     background: url("../img/Email.svg") no-repeat;
     text-align: left;
     padding-left: 2em;
@@ -103,7 +103,7 @@
 
 .email:focus-visible{
     background-color: var(--cinza-secundario);
-    border: var(--azul-principal);
+    border: var(--azul);
 }
 
 /* rodapé */

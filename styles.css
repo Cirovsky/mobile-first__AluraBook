@@ -6,8 +6,8 @@
     --cor-de-fundo: #d8dadd;
     --branco-principal: #FFFFFF;
     --branco-secundario: #d0cedb;
-    --azul-principal: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
-    --azul-secundario: #013f6e;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --azul: #002F52;
     --amarelo-principal:#EB9B00;
     --cinza-secundario: #c4c4c4;
     --preto-principal: #000000;
