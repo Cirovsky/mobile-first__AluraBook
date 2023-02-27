@@ -10,10 +10,9 @@
     background-color: var(--branco-principal);
 }
 
-.swiper-wrapper{
-    column-gap: 2.2em;
+.swipper-slide{
+    margin-right: 3em;
 }
-
 .swipper-slide img{
     width: 100%;
 }
