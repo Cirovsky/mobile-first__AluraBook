@@ -10,6 +10,10 @@
     background-color: var(--branco-principal);
 }
 
+.swiper-wrapper{
+    column-gap: 2.2em;
+}
+
 .swipper-slide img{
     width: 100%;
 }
@@ -28,7 +32,7 @@
 }
 
 .carrossel__lancamento{
-    max-height: 12em;
+    max-height: 15.5em;
     box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
 }
 
@@ -136,7 +140,11 @@
     }
 
     .swiper{
-        width: 60%;
+        width: 70%;
+    }
+
+    .swiper-wrapper{
+        column-gap: 0;
     }
 
     .swiper-pagination{
@@ -150,6 +158,7 @@
     }
 
     .carrossel__lancamento{
+        max-height: 16.6em;
         box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
     }
 }
