@@ -152,7 +152,6 @@
 
     .swiper-button-prev, .swiper-button-next{
         display: block;
-        background-color: var(--azul);
         top: 65%;
     }
 
