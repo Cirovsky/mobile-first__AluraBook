@@ -200,40 +200,11 @@
 @media screen and (min-width: 1728px) {
    
     .cabecalho{
-        justify-content: space-between;
+        grid-template-columns: 1fr auto auto auto 1fr 1fr 1fr 1fr;
     }
 
     .logo-alura{
         margin-right: 5em;
-    }
-    .cabecalho__inicio{
-        margin-left: 17em;
-        
-    }
-    .cabecalho__menu-direito{
-        flex-grow: 1;
-        display: grid;
-        grid-template-columns: .5fr 1fr 3fr 1fr;
-    }
-    .cabecalho__menu-direito__item:nth-child(1){
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .cabecalho__menu-direito__item:nth-child(2){
-        grid-row: 1/2;
-        display: flex;
-    }
-    .cabecalho__menu-direito__item:nth-child(3){
-        grid-row: 1/2;
-        justify-self: end;
-    }
-    .cabecalho__menu-direito__item:last-child{
-        grid-row: 1/2;
-        justify-self: flex-end;
-    }
-
-    .cabecalho__menu-direito__item:nth-child(2)::before:hover{
-        color: var(--preto-principal);
     }
 
     .formatar__texto-direito{
@@ -243,5 +214,11 @@
     .formatar__texto-direito h2{
         display: block;
         text-transform: capitalize;
+    }
+    .cabecalho-sacola{
+        grid-column: 7/8;
+    }
+    .cabecalho-perfil{
+        grid-column: 8/9;
     }
 }
