@@ -315,14 +315,14 @@
         padding: 1em;
     }
     .recentes{
-        padding: 64px 24.25em;
+        padding: 64px 30%;
     }
     
     .recentes h3{
         font-size: 32px;
     }
     .newsletter{
-        padding: 64px 29em;
+        padding: 64px 30%;
         column-gap: 0;
     }
     .newsletter h3{
