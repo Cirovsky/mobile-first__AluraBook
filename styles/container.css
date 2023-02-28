@@ -314,4 +314,21 @@
         width: 45.4%;
         padding: 1em;
     }
+    .recentes{
+        padding: 64px 24.25em;
+    }
+    
+    .recentes h3{
+        font-size: 32px;
+    }
+    .newsletter{
+        padding: 64px 29em;
+        column-gap: 0;
+    }
+    .newsletter h3{
+        padding-right: 0;
+    }
+    .newsletter h3{
+        white-space: nowrap;
+    }
 }
