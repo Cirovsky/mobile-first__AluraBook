@@ -194,6 +194,9 @@
         width: 84%;
         padding: 0.875em 0.7em 1em 1em;
     }
+    .carrossel__texto h3{
+        font-size: 36px;
+    }
     
     .carrossel__lancamento{
         max-height: 15.8em;
