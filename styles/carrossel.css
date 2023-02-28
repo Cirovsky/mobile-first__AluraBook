@@ -1,5 +1,6 @@
 .carrossel{
     text-align: center;
+    position: relative;
 }
 .carrossel__titulo{
     padding: 2em 0 .5em 0;
