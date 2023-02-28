@@ -331,4 +331,19 @@
     .newsletter h3{
         white-space: nowrap;
     }
+
+    .rodape-minimo {
+        margin: 0 121px 0 212px;
+    }
+    .rodape-minimo li a h2{
+        white-space: nowrap;
+    }
+
+    .rodape-coluna:nth-child(2), .rodape-coluna:nth-child(3), .rodape-coluna:nth-child(4){
+        border-left: solid 1px var(--cinza-secundario);
+    }
+
+    .rodape-titulo-col, .titulo-col {
+        padding-left: 1em;
+    }
 }
