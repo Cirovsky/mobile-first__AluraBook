@@ -87,20 +87,21 @@
 }
 
 .cabecalho-sacola{
+    grid-column: 4/5;
     grid-row: 1/2;
     justify-self: flex-end;
 }
 .cabecalho-perfil{
+    grid-column: 5/6;
     grid-row: 1/2;
     justify-self: flex-end;
 }
 @media screen and (min-width: 1024px) {
     .cabecalho{
         padding: 0 5em;
-        justify-content:flex-end;
     }
 
-    .cabecalho__menu,.cabecalho-favoritos,.lista-menu__titulo{
+    .cabecalho__menu,.imagem-favoritos,.lista-menu__titulo{
         display: none;
     }
 
@@ -135,17 +136,6 @@
         color: var(--preto-principal);
     }
 
-    .cabecalho__menu-direito__item{
-        margin-right: 2.625em;
-    }
-
-    .cabecalho__menu-direito__item:last-child{
-        margin-right: 0;
-    }
-
-    .cabecalho-esquerdo:nth-child(2){
-        order: 2;
-    }
     .icone-categorias{
         display: none;
     }
@@ -153,9 +143,11 @@
         display: block;
     }
 
+    .cabecalho__menu-direito__item{
+    }
+
     .caixa-categorias{
         padding: 0.625em;
-        margin-right: 2em;
     }
 
     .container__botao:checked~.caixa-categorias{
@@ -164,21 +156,44 @@
     .container__botao:checked~.caixa-categorias h2{
         color: var(--branco-principal);
     }
-    
-    .logo-alura{
-        position: absolute;
-        left: 5em;
-    }
 
     .lista-menu{
         display: none;
         width: auto;
     }
-
-
     .lista-menu__link{
         text-align: center;
         padding: 1em 1.5em;
+    }
+    .cabecalho-esquerdo{
+        margin-right: 80px;
+    }
+
+    .cabecalho__inicio{
+        justify-self: flex-end;
+        margin-right: 2em;
+    }
+    .cabecalho-favoritos{
+        margin-right: 2em;
+    }
+
+    .cabecalho-estante{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        justify-self: flex-end;
+        white-space: nowrap;
+        margin-right: 2em;
+    }
+    .cabecalho-sacola{
+        grid-column: 5/6;
+    }
+    .cabecalho-perfil{
+        grid-column: 6/7;
+        justify-self: flex-end;
+    }
+
+    .cabecalho{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -215,11 +230,6 @@
     .cabecalho__menu-direito__item:last-child{
         grid-row: 1/2;
         justify-self: flex-end;
-    }
-
-    .cabecalho__menu-direito__item:nth-child(2)::before{
-        content: "MINHA ";
-        margin-right: .5em;
     }
 
     .cabecalho__menu-direito__item:nth-child(2)::before:hover{
