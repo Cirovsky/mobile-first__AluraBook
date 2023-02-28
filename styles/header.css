@@ -1,10 +1,19 @@
 .cabecalho{
     background-color: var(--branco-principal);
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
     align-items: center;
-    position: relative;
     padding: 0 .5em;
+}
+
+.logo-alura{
+    grid-column: 1/2;
+    grid-row: 1/2
+}
+
+.cabecalho__inicio{
+    grid-column: 2/3;
+    grid-row: 1/2
 }
 
 .logo-alura h2{
@@ -71,6 +80,20 @@
     display: none;
 }
 
+.cabecalho-favoritos{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: flex-end;
+}
+
+.cabecalho-sacola{
+    grid-row: 1/2;
+    justify-self: flex-end;
+}
+.cabecalho-perfil{
+    grid-row: 1/2;
+    justify-self: flex-end;
+}
 @media screen and (min-width: 1024px) {
     .cabecalho{
         padding: 0 5em;
